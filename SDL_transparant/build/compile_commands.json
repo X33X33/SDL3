@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/main.cpp.o -c \"/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/main.cpp\"",
+  "file": "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/main.cpp",
+  "output": "CMakeFiles/sdl3_transparent_window.dir/main.cpp.o"
+}
+]

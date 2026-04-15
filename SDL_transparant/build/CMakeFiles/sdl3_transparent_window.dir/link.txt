@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/sdl3_transparent_window.dir/link.d CMakeFiles/sdl3_transparent_window.dir/main.cpp.o -o sdl3_transparent_window  -lSDL3 -lSDL3_image -lSDL3 -lSDL3_image
