@@ -3,6 +3,9 @@ sdl3_transparent_window: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/sdl3_transparent_window.dir/main.cpp.o \
+  CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o \
+  CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o \
+  CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3_image.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so \
@@ -42,6 +45,12 @@ sdl3_transparent_window: \
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
 CMakeFiles/sdl3_transparent_window.dir/main.cpp.o:
+
+CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o:
+
+CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o:
+
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so:
 

@@ -8,7 +8,9 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include "common.hpp"
+#include "Utilities/InitialConfiguration/Setup.hpp"
 #include "Utilities/FileManipulation.hpp"
+#include "Utilities/SDL3_PLUS.hpp"
 #include <filesystem>
 
 
@@ -53,33 +55,44 @@ void MainDataLoad(MainData& _mainData)
     }
 
     std::cerr << "MainData load ok\n";
+
+
+
+    
 }
 
 int main(int argc, char* argv[])
 {
+    
+    SetupWindow();
+    
     MainData mainData;
     MainDataLoad(mainData);
 
 
+
     //Test
-    SDL_Surface* surface = SDL_LoadBMP(std::string(AssetPath + "sample-bmp.bmp").c_str());
+    // SDL_Surface* surface = SDL_LoadBMP(std::string(AssetPath + "sample-bmp.bmp").c_str());
 
-    if (surface == nullptr)
-    {
-        std::cerr << "SDL_LoadBMP Error: " << SDL_GetError() << std::endl;
-        return 1;
-    }
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(mainData.renderer, surface);
+    // if (surface == nullptr)
+    // {
+    //     std::cerr << "SDL_LoadBMP Error: " << SDL_GetError() << std::endl;
+    //     return 1;
+    // }
+    // SDL_Texture* texture = SDL_CreateTextureFromSurface(mainData.renderer, surface);
 
 
+    // if (texture == nullptr)
+    // {
+    //     std::cerr << "SDL_CreateTextureFromSurface Error: " << SDL_GetError() << std::endl;
+    //     return 1;
+    // }
+    // SDL_DestroySurface(surface);
 
-    if (texture == nullptr)
-    {
-        std::cerr << "SDL_CreateTextureFromSurface Error: " << SDL_GetError() << std::endl;
-        return 1;
-    }
-    SDL_DestroySurface(surface);
 
+    Sprite spr(mainData.renderer, std::string(AssetPath + "sample-bmp.bmp"));
+
+    spr.SetScale(50.f, 50.f);
 
 
     bool running = true;
@@ -94,17 +107,21 @@ int main(int argc, char* argv[])
 
         // Fond complètement transparent
         //SDL_SetRenderDrawColor(mainData.renderer, 0, 0, 0, 0);   // alpha = 0
-        SDL_SetRenderDrawColor(mainData.renderer, 0, 0, 0, 255);   // alpha = 0
+        SDL_SetRenderDrawColor(mainData.renderer, 0, 0, 0, 0);   // alpha = 0
 
 
         SDL_RenderClear(mainData.renderer);
 
-        SDL_RenderTexture(mainData.renderer, texture, NULL, NULL);
+        //SDL_RenderTexture(mainData.renderer, texture, NULL, NULL);
+        spr.Draw(mainData.renderer);
+
 
         SDL_RenderPresent(mainData.renderer);
 
         SDL_Delay(16); // ~60 FPS
     }
+
+    spr.~Sprite();
 
     SDL_DestroyRenderer(mainData.renderer);
     SDL_DestroyWindow(mainData.window);

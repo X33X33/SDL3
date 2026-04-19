@@ -25,4 +25,11 @@ std::string ChangeType(std::string _path, std::string _newExtenssion);
 
 std::vector<std::string> GetFilesInFolder(const std::string& folderPath);
 
+// Check if a file exists
+bool FileExist(const std::string& _path);
+
+// Check if a folder exists
+bool FolderExist(const std::string& _path);
+
+
 #endif //!FILE_MANIPULATION_HPP

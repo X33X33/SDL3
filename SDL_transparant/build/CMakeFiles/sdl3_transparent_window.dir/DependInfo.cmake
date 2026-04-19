@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/main.cpp" "CMakeFiles/sdl3_transparent_window.dir/main.cpp.o" "gcc" "CMakeFiles/sdl3_transparent_window.dir/main.cpp.o.d"
+  "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp" "CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o" "gcc" "CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o.d"
+  "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp" "CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o" "gcc" "CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o.d"
+  "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp" "CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o" "gcc" "CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o.d"
+  "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp" "CMakeFiles/sdl3_transparent_window.dir/main.cpp.o" "gcc" "CMakeFiles/sdl3_transparent_window.dir/main.cpp.o.d"
   "" "sdl3_transparent_window" "gcc" "CMakeFiles/sdl3_transparent_window.dir/link.d"
   )
 

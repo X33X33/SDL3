@@ -1,5 +1,5 @@
 CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
- /home/benoit/Documents/Programation/Projets/local/Projet\ transparant/SDL_transparant/main.cpp \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp \
  /usr/include/stdc-predef.h /usr/include/SDL3/SDL.h \
  /usr/include/SDL3/SDL_stdinc.h /usr/include/SDL3/SDL_platform_defines.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
@@ -51,7 +51,7 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/SDL3/SDL_time.h /usr/include/SDL3/SDL_timer.h \
  /usr/include/SDL3/SDL_tray.h /usr/include/SDL3/SDL_version.h \
  /usr/include/SDL3/SDL_oldnames.h /usr/include/SDL3/SDL_main.h \
- /home/benoit/Documents/Programation/Projets/local/Projet\ transparant/SDL_transparant/common.hpp \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/common.hpp \
  /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
@@ -178,7 +178,12 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/c++/15/bits/stl_map.h \
  /usr/include/c++/15/bits/stl_multimap.h \
  /usr/include/c++/15/bits/erase_if.h \
- /home/benoit/Documents/Programation/Projets/local/Projet\ transparant/SDL_transparant/Utilities/FileManipulation.hpp \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.hpp \
+ /usr/include/c++/15/fstream /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/15/bits/fstream.tcc \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.hpp \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/cstdint /usr/include/c++/15/bits/chrono.h \
  /usr/include/c++/15/ratio /usr/include/c++/15/limits \
@@ -187,8 +192,7 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets_nonio.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
- /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/libintl.h /usr/include/c++/15/bits/locale_facets_nonio.tcc \
  /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/iomanip \
  /usr/include/c++/15/bits/quoted_string.h /usr/include/c++/15/sstream \
  /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/codecvt \
@@ -197,4 +201,5 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/c++/15/bits/shared_ptr_base.h \
  /usr/include/c++/15/bits/allocated_ptr.h \
  /usr/include/c++/15/bits/unique_ptr.h /usr/include/c++/15/bits/fs_dir.h \
- /usr/include/c++/15/bits/fs_ops.h
+ /usr/include/c++/15/bits/fs_ops.h \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.hpp

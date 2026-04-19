@@ -1,7 +1,7 @@
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/sdl3_transparent_window.dir
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/edit_cache.dir
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/rebuild_cache.dir
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/list_install_components.dir
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/install.dir
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/install/local.dir
-/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles/install/strip.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/sdl3_transparent_window.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/edit_cache.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/rebuild_cache.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/list_install_components.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/install.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/install/local.dir
+/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/install/strip.dir

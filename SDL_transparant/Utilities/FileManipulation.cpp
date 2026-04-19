@@ -1,3 +1,4 @@
+
 #include "FileManipulation.hpp"
 #include <filesystem>
 
@@ -27,9 +28,9 @@ std::string ChangeType(std::string _path, std::string _newExtenssion)
 {
 	std::filesystem::path p(_path);
 	if (_newExtenssion.size() && _newExtenssion[0] == '.')
-		p.replace_extension(_newExtenssion);
+	p.replace_extension(_newExtenssion);
 	else
-		p.replace_extension("." + _newExtenssion);
+	p.replace_extension("." + _newExtenssion);
 	return p.string();
 }
 
@@ -37,7 +38,7 @@ std::string ChangeType(std::string _path, std::string _newExtenssion)
 std::vector<std::string> GetFilesInFolder(const std::string& folderPath)
 {
 	std::vector<std::string> files;	
-
+	
 	for (const auto& entry : std::filesystem::directory_iterator(folderPath))
 	{
 		if (entry.is_regular_file())
@@ -46,4 +47,14 @@ std::vector<std::string> GetFilesInFolder(const std::string& folderPath)
 		}
 	}
 	return files;
+}
+
+bool FileExist(const std::string& _path)
+{
+	return std::filesystem::exists(_path) && std::filesystem::is_regular_file(_path);
+}
+
+bool FolderExist(const std::string& _path)
+{
+	return std::filesystem::exists(_path) && std::filesystem::is_directory(_path);
 }

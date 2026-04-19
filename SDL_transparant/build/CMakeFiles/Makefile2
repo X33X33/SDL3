@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant"
+CMAKE_SOURCE_DIR = /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build"
+CMAKE_BINARY_DIR = /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/sdl3_transparent_window.dir/clean
 CMakeFiles/sdl3_transparent_window.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles" --progress-num=1,2 "Built target sdl3_transparent_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target sdl3_transparent_window"
 .PHONY : CMakeFiles/sdl3_transparent_window.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sdl3_transparent_window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sdl3_transparent_window.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles 0
 .PHONY : CMakeFiles/sdl3_transparent_window.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/rule
 # codegen rule for target.
 CMakeFiles/sdl3_transparent_window.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target sdl3_transparent_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target sdl3_transparent_window"
 .PHONY : CMakeFiles/sdl3_transparent_window.dir/codegen
 
 # clean rule for target.

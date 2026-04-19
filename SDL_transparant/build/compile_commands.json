@@ -1,8 +1,26 @@
 [
 {
-  "directory": "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/main.cpp.o -c \"/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/main.cpp\"",
-  "file": "/home/benoit/Documents/Programation/Projets/local/Projet transparant/SDL_transparant/main.cpp",
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build",
+  "command": "/usr/bin/g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets/\\\" -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/main.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp",
   "output": "CMakeFiles/sdl3_transparent_window.dir/main.cpp.o"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build",
+  "command": "/usr/bin/g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets/\\\" -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp",
+  "output": "CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build",
+  "command": "/usr/bin/g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets/\\\" -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp",
+  "output": "CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build",
+  "command": "/usr/bin/g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets/\\\" -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp",
+  "output": "CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o"
 }
 ]
