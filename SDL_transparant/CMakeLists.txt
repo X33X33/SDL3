@@ -1,14 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(sdl3_transparent_window)
 
-
-# Utilisation conditionnelle de pkg-config :
-if(NOT CMAKE_CROSSCOMPILING)
-  find_package(PkgConfig REQUIRED)
-  pkg_check_modules(SDL3 REQUIRED sdl3)
-  pkg_check_modules(SDL3_IMAGE REQUIRED sdl3-image)
-endif()
-
 file(GLOB MAIN_SRC "main.cpp")
 file(GLOB_RECURSE UTILITIES_SRC "Utilities/*.cpp")
 add_executable(${PROJECT_NAME} ${MAIN_SRC} ${UTILITIES_SRC})
@@ -24,16 +16,40 @@ foreach(subdir ${UTILITIES_SUBDIRS})
   endif()
 endforeach()
 
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/Utilities ${UTILITIES_INCLUDE_DIRS})
 
+# Dependencies Linux/Windows
+if(WIN32 OR CMAKE_SYSTEM_NAME STREQUAL "Windows")
+  set(SDL3_WIN_PACKAGE_ROOT "${CMAKE_SOURCE_DIR}/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4")
+  if(EXISTS "${SDL3_WIN_PACKAGE_ROOT}/cmake/SDL3Config.cmake")
+    list(PREPEND CMAKE_PREFIX_PATH "${SDL3_WIN_PACKAGE_ROOT}")
+  endif()
 
-# Pour la cross-compilation Windows, inclure et linker manuellement
-if(CMAKE_CROSSCOMPILING)
-  set(SDL3_WIN_ROOT "${CMAKE_SOURCE_DIR}/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4/x86_64-w64-mingw32")
-  target_include_directories(sdl3_transparent_window PRIVATE ${SDL3_WIN_ROOT}/include ${CMAKE_SOURCE_DIR}/Utilities ${UTILITIES_INCLUDE_DIRS})
-  target_link_libraries(sdl3_transparent_window PRIVATE -L${SDL3_WIN_ROOT}/lib -lSDL3)
+  find_package(SDL3 CONFIG REQUIRED)
+  target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3)
+
+  find_package(SDL3_image CONFIG QUIET)
+  if(TARGET SDL3_image::SDL3_image)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE HAS_SDL3_IMAGE=1)
+    target_link_libraries(${PROJECT_NAME} PRIVATE SDL3_image::SDL3_image)
+  else()
+    message(STATUS "SDL3_image non trouve: fallback BMP uniquement (SDL_LoadBMP)")
+  endif()
 else()
-  target_include_directories(sdl3_transparent_window PRIVATE ${SDL3_INCLUDE_DIRS} ${SDL3_IMAGE_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR}/Utilities ${UTILITIES_INCLUDE_DIRS})
-  target_link_libraries(sdl3_transparent_window PRIVATE ${SDL3_LIBRARIES} ${SDL3_IMAGE_LIBRARIES})
+  find_package(PkgConfig REQUIRED)
+  pkg_check_modules(SDL3 REQUIRED sdl3)
+  pkg_check_modules(SDL3_IMAGE QUIET sdl3-image)
+
+  target_include_directories(${PROJECT_NAME} PRIVATE ${SDL3_INCLUDE_DIRS})
+  target_link_libraries(${PROJECT_NAME} PRIVATE ${SDL3_LIBRARIES})
+
+  if(SDL3_IMAGE_FOUND)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE HAS_SDL3_IMAGE=1)
+    target_include_directories(${PROJECT_NAME} PRIVATE ${SDL3_IMAGE_INCLUDE_DIRS})
+    target_link_libraries(${PROJECT_NAME} PRIVATE ${SDL3_IMAGE_LIBRARIES})
+  else()
+    message(STATUS "sdl3-image non trouve: fallback BMP uniquement (SDL_LoadBMP)")
+  endif()
 endif()
 
 set_target_properties(sdl3_transparent_window PROPERTIES

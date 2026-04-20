@@ -1,6 +1,9 @@
 #include "SDL3_PLUS.hpp"
-#include <SDL3_image/SDL_image.h>   // Pour charger PNG, JPG, etc.
 #include <iostream>
+
+#ifdef HAS_SDL3_IMAGE
+#include <SDL3_image/SDL_image.h>
+#endif
 
 Sprite::Sprite(SDL_Renderer* renderer, const std::string& filePath)
 {
@@ -10,11 +13,19 @@ Sprite::Sprite(SDL_Renderer* renderer, const std::string& filePath)
         return;
     }
 
-    // Chargement avec SDL_image (recommandé pour PNG avec alpha)
-    SDL_Surface* surface = IMG_Load(filePath.c_str());
+    SDL_Surface* surface = nullptr;
+
+#ifdef HAS_SDL3_IMAGE
+    // Chargement multi-format avec SDL3_image (PNG, JPG, BMP, ...)
+    surface = IMG_Load(filePath.c_str());
+#else
+    // Fallback sans SDL3_image: BMP uniquement
+    surface = SDL_LoadBMP(filePath.c_str());
+#endif
+
     if (!surface)
     {
-        //std::cerr << "IMG_Load Error: " << IMG_GetError() << " (" << filePath << ")\n";
+        std::cerr << "Image load error: " << SDL_GetError() << " (" << filePath << ")\n";
         return;
     }
 

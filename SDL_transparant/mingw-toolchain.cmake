@@ -1,28 +1,23 @@
-# Désactive l'utilisation des includes système Linux
-set(CMAKE_SYSROOT "")
+# Toolchain MinGW (cross-compilation Linux -> Windows)
 set(CMAKE_SYSTEM_NAME Windows)
-set(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc)
-set(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
+set(CMAKE_SYSTEM_PROCESSOR x86_64)
 
-# Chemins SDL3 pour Windows cross-compilation
-set(SDL3_WIN_ROOT "${CMAKE_SOURCE_DIR}/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4/x86_64-w64-mingw32")
-set(CMAKE_INCLUDE_PATH "${SDL3_WIN_ROOT}/include" ${CMAKE_INCLUDE_PATH})
-set(CMAKE_LIBRARY_PATH "${SDL3_WIN_ROOT}/lib" ${CMAKE_LIBRARY_PATH})
-link_directories("${SDL3_WIN_ROOT}/lib")
-include_directories("${SDL3_WIN_ROOT}/include")
+set(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc CACHE FILEPATH "")
+set(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++ CACHE FILEPATH "")
+set(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres CACHE FILEPATH "")
 
-# Pour éviter d'utiliser les includes natifs Linux
+# Prefix SDL3 local (package devel MinGW dans le repo)
+set(SDL3_WIN_PACKAGE_ROOT "${CMAKE_CURRENT_LIST_DIR}/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4")
+set(SDL3_WIN_ROOT "${SDL3_WIN_PACKAGE_ROOT}/x86_64-w64-mingw32")
+
+# Permet a find_package(SDL3 CONFIG) de trouver WinInclude/.../cmake/SDL3Config.cmake
+if(EXISTS "${SDL3_WIN_PACKAGE_ROOT}/cmake/SDL3Config.cmake")
+	list(PREPEND CMAKE_PREFIX_PATH "${SDL3_WIN_PACKAGE_ROOT}")
+endif()
+
+# Evite de melanger includes/libs Linux avec la cible Windows
 set(CMAKE_FIND_ROOT_PATH "${SDL3_WIN_ROOT}")
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-
-# Ajout des chemins SDL3 pour Windows
-set(SDL3_WIN_ROOT "${CMAKE_SOURCE_DIR}/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4/x86_64-w64-mingw32")
-set(CMAKE_INCLUDE_PATH "${SDL3_WIN_ROOT}/include" ${CMAKE_INCLUDE_PATH})
-set(CMAKE_LIBRARY_PATH "${SDL3_WIN_ROOT}/lib" ${CMAKE_LIBRARY_PATH})
-link_directories("${SDL3_WIN_ROOT}/lib")
-include_directories("${SDL3_WIN_ROOT}/include")
-
-# Chemins de recherche pour les bibliothèques
-set(CMAKE_SYSROOT "")
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE BOTH)
