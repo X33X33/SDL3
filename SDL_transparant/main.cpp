@@ -37,11 +37,18 @@ void MainDataLoad(MainData& _mainData)
     _mainData.window = nullptr;
     _mainData.renderer = nullptr;
     
+    const SDL_DisplayMode* desktopMode = SDL_GetDesktopDisplayMode(0);
+    printf("Desktop size x %d, y %d\n", desktopMode->w, desktopMode->h);
+
+
     SDL_CreateWindowAndRenderer
     (
         "Mon Overlay Transparent",
-        1920, 1080,
-        SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP,
+         1920, 1080,
+        
+        //SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP,
+        //Change this if i want border or not, border is beter for debug
+        SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP,
         &_mainData.window, &_mainData.renderer
     );
 
