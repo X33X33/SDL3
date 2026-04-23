@@ -1,6 +1,8 @@
 #include "SDL3_PLUS.hpp"
 #include <iostream>
 
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 #ifdef HAS_SDL3_IMAGE
 #include <SDL3_image/SDL_image.h>
 #endif

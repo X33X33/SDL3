@@ -29,37 +29,49 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 57,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 36,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 45,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 35,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 39,
+				"line" : 55,
 				"parent" : 0
 			}
 		]
@@ -76,18 +88,22 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"define" : "ASSETS_ROOT_PATH=\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets/\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "HAS_SDL3_IMAGE=1"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration"
 				}
 			],
@@ -96,7 +112,7 @@
 			{
 				"backtraces" : 
 				[
-					6
+					8
 				],
 				"standard" : "17"
 			},
@@ -142,7 +158,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lSDL3_image",
 				"role" : "libraries"
 			},
@@ -152,7 +168,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lSDL3_image",
 				"role" : "libraries"
 			}

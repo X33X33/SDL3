@@ -168,4 +168,5 @@ CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc /usr/include/SDL3_image/SDL_image.h
+ /usr/include/c++/15/bits/istream.tcc /usr/include/SDL3/SDL_main.h \
+ /usr/include/SDL3_image/SDL_image.h

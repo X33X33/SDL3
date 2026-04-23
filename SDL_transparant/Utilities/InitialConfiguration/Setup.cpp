@@ -57,7 +57,8 @@ bool HyprlandIsConfigured(void)
 
 bool SetupHyprlandConfig(void)
 {
-
+    //Name of executable
+    //hyprctl keyword windowrulev2 "noblur,class:^(MyTransparentApp)$"
 
     return false;
 }

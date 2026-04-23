@@ -1,7 +1,9 @@
 CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SDL3/SDL.h \
- /usr/include/SDL3/SDL_stdinc.h /usr/include/SDL3/SDL_platform_defines.h \
+ /usr/include/stdc-predef.h \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.hpp \
+ /usr/include/SDL3/SDL.h /usr/include/SDL3/SDL_stdinc.h \
+ /usr/include/SDL3/SDL_platform_defines.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
  /usr/include/string.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -50,9 +52,8 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/SDL3/SDL_storage.h /usr/include/SDL3/SDL_system.h \
  /usr/include/SDL3/SDL_time.h /usr/include/SDL3/SDL_timer.h \
  /usr/include/SDL3/SDL_tray.h /usr/include/SDL3/SDL_version.h \
- /usr/include/SDL3/SDL_oldnames.h /usr/include/SDL3/SDL_main.h \
- /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/common.hpp \
- /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
+ /usr/include/SDL3/SDL_oldnames.h /usr/include/c++/15/iostream \
+ /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
@@ -167,8 +168,9 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/vector \
- /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/istream.tcc \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/common.hpp \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
  /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
  /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/map \
@@ -201,5 +203,4 @@ CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: \
  /usr/include/c++/15/bits/shared_ptr_base.h \
  /usr/include/c++/15/bits/allocated_ptr.h \
  /usr/include/c++/15/bits/unique_ptr.h /usr/include/c++/15/bits/fs_dir.h \
- /usr/include/c++/15/bits/fs_ops.h \
- /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.hpp
+ /usr/include/c++/15/bits/fs_ops.h

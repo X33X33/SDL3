@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-9a4b2e943eccdb327a7d.json",
+					"jsonFile" : "directory-.-Debug-3038d0225a66e24b00f8.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sdl3_transparent_window::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sdl3_transparent_window-Debug-62d2c4b994f896fb9a63.json",
+					"jsonFile" : "target-sdl3_transparent_window-Debug-4e328bd780a4b361aec1.json",
 					"name" : "sdl3_transparent_window",
 					"projectIndex" : 0
 				}

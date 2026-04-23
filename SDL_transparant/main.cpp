@@ -5,12 +5,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h>
+#include "Utilities/SDL3_PLUS.hpp"
 #include "common.hpp"
 #include "Utilities/InitialConfiguration/Setup.hpp"
 #include "Utilities/FileManipulation.hpp"
-#include "Utilities/SDL3_PLUS.hpp"
 #include <filesystem>
 
 
@@ -38,12 +36,12 @@ void MainDataLoad(MainData& _mainData)
     _mainData.renderer = nullptr;
     
     const SDL_DisplayMode* desktopMode = SDL_GetDesktopDisplayMode(0);
-    printf("Desktop size x %d, y %d\n", desktopMode->w, desktopMode->h);
+    //printf("Desktop size x %d, y %d\n", desktopMode->w, desktopMode->h);
 
 
     SDL_CreateWindowAndRenderer
     (
-        "Mon Overlay Transparent",
+        "AudioPlayerX33",
          1920, 1080,
         
         //SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP,
@@ -71,11 +69,11 @@ void MainDataLoad(MainData& _mainData)
 int main(int argc, char* argv[])
 {
     
-    SetupWindow();
     
     MainData mainData;
     MainDataLoad(mainData);
-
+    
+    SetupWindow();
 
 
     //Test
