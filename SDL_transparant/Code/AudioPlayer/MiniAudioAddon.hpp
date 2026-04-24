@@ -2,7 +2,10 @@
 //#include "../common.hpp"
 #include <iostream>
 #include <string>
-#include "miniaudio.h"
+
+struct ma_engine; 
+struct ma_sound;
+
 
 enum MusicState
 {
@@ -25,8 +28,8 @@ class MiniAudio
 	private:
 
 		//Initialisation de MiniAudio
-		ma_engine engine;
-		ma_sound sound;
-		MusicState state;
+		ma_engine* engine = nullptr; 
+		ma_sound* sound = nullptr;
+		MusicState state = NOTHING;
 
 };

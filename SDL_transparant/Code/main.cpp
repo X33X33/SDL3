@@ -63,17 +63,11 @@ void MainDataLoad(MainData& _mainData)
         exit(EXIT_FAILURE);
     }
 
-    std::cerr << "MainData load ok\n";
-
-
-
-    
+    std::cerr << "MainData load ok\n";    
 }
 
 int main(int argc, char* argv[])
-{
-    
-    
+{    
     MainData mainData;
     MainDataLoad(mainData);
     

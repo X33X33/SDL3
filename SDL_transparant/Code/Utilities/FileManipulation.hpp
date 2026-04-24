@@ -11,13 +11,17 @@ enum FileType
 	TEXTURE,
 	IMAGE,
 	SOUND_BUFFER,
-	MUSIC
+	MUSIC,
+	UNKNOW
 };
 
 //Extrude name of path
 std::string GetName(std::string _string, bool _exludeType);
 //Return the extension type enum
 std::string GetFileType(std::string _string);
+//Get file type
+//CURRENTLY SUPPORTED : image and music (not a lot of format, personal usage only)
+FileType GetFileTypeEnum(std::string _string);
 //Remove the file of his path
 std::string GetPath(std::string _string);
 //Change the extenssion filename

@@ -1,28 +1,32 @@
+#include "MiniAudioAddon.hpp"
+#include <cstdlib>
 #define MINIAUDIO_IMPLEMENTATION
 #include "miniaudio.h"
-#include "MiniAudioAddon.hpp"
+
 
 MiniAudio::MiniAudio()
 {
-    state = NOTHING;
+    engine = new ma_engine();
+    sound = new ma_sound();
 
-    if (ma_engine_init(NULL, &engine) != MA_SUCCESS)
+    if (ma_engine_init(NULL, engine) != MA_SUCCESS)
     {
         std::cout << "error on loading mini audio engine\n";
-        //return -1;
+        exit(EXIT_FAILURE);
     }
 }
 
 //Lecture du fichier audio
 int MiniAudio::PlayMusic(const char* _filePath)
 {
-    if (!ma_sound_init_from_file(&engine, _filePath, 0, NULL, NULL, &sound))
+    ma_result result = ma_sound_init_from_file(engine, _filePath, 0, NULL, NULL, sound);
+    if (result != MA_SUCCESS)
     {
-        std::cerr << "Erreur lors du chargement du son\n";
+        std::cerr << "Erreur lors du chargement du son, code miniaudio : " << result << std::endl;
         return -1;
     }
 
-    ma_sound_start(&sound);  // lecture
+    ma_sound_start(sound);
 
 
     return 0;
@@ -30,6 +34,10 @@ int MiniAudio::PlayMusic(const char* _filePath)
 
 void MiniAudio::Cleanup()
 {
-    ma_sound_uninit(&sound);
-    ma_engine_uninit(&engine);
+    ma_sound_uninit(sound);
+    ma_engine_uninit(engine);
+
+    delete sound;
+    delete engine;
+
 }

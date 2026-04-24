@@ -17,6 +17,30 @@ std::string GetFileType(std::string _string)
 	if (!ext.empty() && ext[0] == '.') ext.erase(0, 1);
 	return ext;
 }
+FileType GetFileTypeEnum(std::string _string)
+{
+	std::filesystem::path p(_string);
+	std::string ext = p.extension().string();
+	if (!ext.empty() && ext[0] == '.') ext.erase(0, 1);
+
+	if (ext == "png" 
+		|| ext == "bmp" 
+		|| ext == "jpeg"
+		|| ext == "jpg")
+	{
+		return FileType::IMAGE;
+	}
+	else if (ext == "wav"
+		|| ext == "ogg"
+		|| ext == "flac"
+		|| ext == "mp3")
+	{
+		return FileType::MUSIC;
+	}
+
+
+	return FileType::UNKNOW;
+}
 //Return path without name
 std::string GetPath(std::string _string)
 {

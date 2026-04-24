@@ -1,4 +1,5 @@
 {
     "cmake.sourceDirectory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code",
-    "C_Cpp.default.compilerPath": "/usr/bin/g++"
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "debuginfod.enabled": "off"
 }

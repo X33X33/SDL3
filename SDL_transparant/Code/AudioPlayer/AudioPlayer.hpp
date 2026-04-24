@@ -2,7 +2,6 @@
 #define AUDIO_PLAYER_HPP
 
 #include "MiniAudioAddon.hpp"
-#include "../Utilities/jsoncpp.cpp"
 #include "../Utilities/json/json.h"
 
 
@@ -19,8 +18,8 @@ public:
 private:
 
     Json::Value config;
-
-
+    std::vector<std::string> musicsPath;
+    MiniAudio miniAudio;
 
 
 };
