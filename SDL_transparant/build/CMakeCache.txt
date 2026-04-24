@@ -20,14 +20,18 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
+//For backwards compatibility, what version of CMake commands and
+// syntax should this version of CMake try to support.
+CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
+
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/g++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -52,8 +56,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/gcc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -147,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=sdl3_transparent_window
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -214,11 +218,26 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=
+
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code
 
 //Path to a library.
 pkgcfg_lib_SDL3_IMAGE_SDL3:FILEPATH=/usr/lib64/libSDL3.so
@@ -228,15 +247,6 @@ pkgcfg_lib_SDL3_IMAGE_SDL3_image:FILEPATH=/usr/lib64/libSDL3_image.so
 
 //Path to a library.
 pkgcfg_lib_SDL3_SDL3:FILEPATH=/usr/lib64/libSDL3.so
-
-//Value Computed by CMake
-sdl3_transparent_window_BINARY_DIR:STATIC=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build
-
-//Value Computed by CMake
-sdl3_transparent_window_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-sdl3_transparent_window_SOURCE_DIR:STATIC=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant
 
 
 ########################
@@ -323,7 +333,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=0
 //ADVANCED property for variable: CMAKE_LINKER

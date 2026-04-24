@@ -37,22 +37,9 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/x86_64-w64-mingw32-objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/sdl3_transparent_window.exe")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  file(INSTALL DESTINATION "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win" TYPE EXECUTABLE FILES "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/sdl3_transparent_window.exe")
-  if(EXISTS "$ENV{DESTDIR}/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/sdl3_transparent_window.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/sdl3_transparent_window.exe")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/x86_64-w64-mingw32-strip" "$ENV{DESTDIR}/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/sdl3_transparent_window.exe")
-    endif()
-  endif()
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant
+CMAKE_SOURCE_DIR = /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build
@@ -72,82 +72,130 @@ include CMakeFiles/sdl3_transparent_window.dir/flags.make
 CMakeFiles/sdl3_transparent_window.dir/codegen:
 .PHONY : CMakeFiles/sdl3_transparent_window.dir/codegen
 
-CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
-CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp
-CMakeFiles/sdl3_transparent_window.dir/main.cpp.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/main.cpp.o -MF CMakeFiles/sdl3_transparent_window.dir/main.cpp.o.d -o CMakeFiles/sdl3_transparent_window.dir/main.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp
+CMakeFiles/sdl3_transparent_window.dir/main.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/main.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/main.cpp
+CMakeFiles/sdl3_transparent_window.dir/main.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/main.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/main.o -MF CMakeFiles/sdl3_transparent_window.dir/main.o.d -o CMakeFiles/sdl3_transparent_window.dir/main.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/main.cpp
 
-CMakeFiles/sdl3_transparent_window.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp > CMakeFiles/sdl3_transparent_window.dir/main.cpp.i
+CMakeFiles/sdl3_transparent_window.dir/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/main.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/main.cpp > CMakeFiles/sdl3_transparent_window.dir/main.i
 
-CMakeFiles/sdl3_transparent_window.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/main.cpp -o CMakeFiles/sdl3_transparent_window.dir/main.cpp.s
+CMakeFiles/sdl3_transparent_window.dir/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/main.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/main.cpp -o CMakeFiles/sdl3_transparent_window.dir/main.s
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
-CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp
-CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/FileManipulation.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/FileManipulation.cpp
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.i
+CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/FileManipulation.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.i
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/FileManipulation.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.s
+CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/FileManipulation.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.s
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
-CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp
-CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration/Setup.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration/Setup.cpp
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.i
+CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration/Setup.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.i
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/InitialConfiguration/Setup.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.s
+CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration/Setup.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.s
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
-CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp
-CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SDL3_PLUS.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SDL3_PLUS.cpp
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.i
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SDL3_PLUS.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.i
 
-CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Utilities/SDL3_PLUS.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.s
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SDL3_PLUS.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.s
+
+CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp
+CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o -MF CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o.d -o CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp
+
+CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp > CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.i
+
+CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp -o CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.s
+
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/AudioPlayer.cpp
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o -MF CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o.d -o CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/AudioPlayer.cpp
+
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/AudioPlayer.cpp > CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.i
+
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/AudioPlayer.cpp -o CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.s
+
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o: CMakeFiles/sdl3_transparent_window.dir/flags.make
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/MiniAudioAddon.cpp
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o -MF CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o.d -o CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/MiniAudioAddon.cpp
+
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/MiniAudioAddon.cpp > CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.i
+
+CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/MiniAudioAddon.cpp -o CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.s
 
 # Object files for target sdl3_transparent_window
 sdl3_transparent_window_OBJECTS = \
-"CMakeFiles/sdl3_transparent_window.dir/main.cpp.o" \
-"CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o" \
-"CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o" \
-"CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o"
+"CMakeFiles/sdl3_transparent_window.dir/main.o" \
+"CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o" \
+"CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o" \
+"CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o" \
+"CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o" \
+"CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o" \
+"CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o"
 
 # External object files for target sdl3_transparent_window
 sdl3_transparent_window_EXTERNAL_OBJECTS =
 
-sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/main.cpp.o
-sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.o
-sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.o
-sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/main.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o
+sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o
 sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/build.make
 sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/compiler_depend.ts
 sdl3_transparent_window: CMakeFiles/sdl3_transparent_window.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable sdl3_transparent_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable sdl3_transparent_window"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdl3_transparent_window.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -E copy_directory /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/Assets
+	/usr/bin/cmake -E copy_directory /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/../Assets /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/Assets
 
 # Rule to build all files generated by this target.
 CMakeFiles/sdl3_transparent_window.dir/build: sdl3_transparent_window
@@ -158,6 +206,6 @@ CMakeFiles/sdl3_transparent_window.dir/clean:
 .PHONY : CMakeFiles/sdl3_transparent_window.dir/clean
 
 CMakeFiles/sdl3_transparent_window.dir/depend:
-	cd /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/sdl3_transparent_window.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build/CMakeFiles/sdl3_transparent_window.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/sdl3_transparent_window.dir/depend
 

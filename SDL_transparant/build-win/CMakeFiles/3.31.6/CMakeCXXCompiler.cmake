@@ -88,7 +88,7 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/x86_64-w64-mingw32/sys-root/mingw/include/c++;/usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32;/usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/backward;/usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include;/usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include-fixed;/usr/x86_64-w64-mingw32/sys-root/mingw/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-w64-mingw32/15.2.1;/usr/x86_64-w64-mingw32/lib;/usr/x86_64-w64-mingw32/sys-root/mingw/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")

@@ -1,4 +1,4 @@
-# Install script for directory: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant
+# Install script for directory: /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

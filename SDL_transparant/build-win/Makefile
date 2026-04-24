@@ -171,104 +171,8 @@ sdl3_transparent_window: cmake_check_build_system
 
 # fast build rule for target.
 sdl3_transparent_window/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/build
+	$(MAKE) $(MAKESILENT) -f Code/CMakeFiles/sdl3_transparent_window.dir/build.make Code/CMakeFiles/sdl3_transparent_window.dir/build
 .PHONY : sdl3_transparent_window/fast
-
-Utilities/FileManipulation.obj: Utilities/FileManipulation.cpp.obj
-.PHONY : Utilities/FileManipulation.obj
-
-# target to build an object file
-Utilities/FileManipulation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.obj
-.PHONY : Utilities/FileManipulation.cpp.obj
-
-Utilities/FileManipulation.i: Utilities/FileManipulation.cpp.i
-.PHONY : Utilities/FileManipulation.i
-
-# target to preprocess a source file
-Utilities/FileManipulation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.i
-.PHONY : Utilities/FileManipulation.cpp.i
-
-Utilities/FileManipulation.s: Utilities/FileManipulation.cpp.s
-.PHONY : Utilities/FileManipulation.s
-
-# target to generate assembly for a file
-Utilities/FileManipulation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.s
-.PHONY : Utilities/FileManipulation.cpp.s
-
-Utilities/InitialConfiguration/Setup.obj: Utilities/InitialConfiguration/Setup.cpp.obj
-.PHONY : Utilities/InitialConfiguration/Setup.obj
-
-# target to build an object file
-Utilities/InitialConfiguration/Setup.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.obj
-.PHONY : Utilities/InitialConfiguration/Setup.cpp.obj
-
-Utilities/InitialConfiguration/Setup.i: Utilities/InitialConfiguration/Setup.cpp.i
-.PHONY : Utilities/InitialConfiguration/Setup.i
-
-# target to preprocess a source file
-Utilities/InitialConfiguration/Setup.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.i
-.PHONY : Utilities/InitialConfiguration/Setup.cpp.i
-
-Utilities/InitialConfiguration/Setup.s: Utilities/InitialConfiguration/Setup.cpp.s
-.PHONY : Utilities/InitialConfiguration/Setup.s
-
-# target to generate assembly for a file
-Utilities/InitialConfiguration/Setup.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.s
-.PHONY : Utilities/InitialConfiguration/Setup.cpp.s
-
-Utilities/SDL3_PLUS.obj: Utilities/SDL3_PLUS.cpp.obj
-.PHONY : Utilities/SDL3_PLUS.obj
-
-# target to build an object file
-Utilities/SDL3_PLUS.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj
-.PHONY : Utilities/SDL3_PLUS.cpp.obj
-
-Utilities/SDL3_PLUS.i: Utilities/SDL3_PLUS.cpp.i
-.PHONY : Utilities/SDL3_PLUS.i
-
-# target to preprocess a source file
-Utilities/SDL3_PLUS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.i
-.PHONY : Utilities/SDL3_PLUS.cpp.i
-
-Utilities/SDL3_PLUS.s: Utilities/SDL3_PLUS.cpp.s
-.PHONY : Utilities/SDL3_PLUS.s
-
-# target to generate assembly for a file
-Utilities/SDL3_PLUS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.s
-.PHONY : Utilities/SDL3_PLUS.cpp.s
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -283,18 +187,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... sdl3_transparent_window"
-	@echo "... Utilities/FileManipulation.obj"
-	@echo "... Utilities/FileManipulation.i"
-	@echo "... Utilities/FileManipulation.s"
-	@echo "... Utilities/InitialConfiguration/Setup.obj"
-	@echo "... Utilities/InitialConfiguration/Setup.i"
-	@echo "... Utilities/InitialConfiguration/Setup.s"
-	@echo "... Utilities/SDL3_PLUS.obj"
-	@echo "... Utilities/SDL3_PLUS.i"
-	@echo "... Utilities/SDL3_PLUS.s"
-	@echo "... main.obj"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

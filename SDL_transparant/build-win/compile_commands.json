@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/main.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/main.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/main.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/main.cpp.obj"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/FileManipulation.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/FileManipulation.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.cpp.obj"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration/Setup.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration/Setup.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.obj"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SDL3_PLUS.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SDL3_PLUS.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.cpp.obj"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/AudioPlayer.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/AudioPlayer.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.cpp.obj"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win/Code",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/../Assets/\\\" @CMakeFiles/sdl3_transparent_window.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.cpp.obj -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/MiniAudioAddon.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/MiniAudioAddon.cpp",
+  "output": "Code/CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.cpp.obj"
+}
+]
