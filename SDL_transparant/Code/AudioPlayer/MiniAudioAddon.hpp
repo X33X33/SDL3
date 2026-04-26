@@ -21,9 +21,14 @@ class MiniAudio
 	public:
 
 		MiniAudio();
+		~MiniAudio();
 
 		int PlayMusic(const char* _filePath);
-		void Cleanup();
+		bool MusicIsPlaying(void);
+
+		void SetVolume(float _volume);
+		const float GetVolume(void);
+
 
 	private:
 

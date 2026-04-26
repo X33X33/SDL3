@@ -250,6 +250,21 @@ Utilities/SDL3_PLUS.s:
 .PHONY : Utilities/SDL3_PLUS.s
 
 # target to build an object file
+Utilities/SqliteAddon.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.o
+.PHONY : Utilities/SqliteAddon.o
+
+# target to preprocess a source file
+Utilities/SqliteAddon.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.i
+.PHONY : Utilities/SqliteAddon.i
+
+# target to generate assembly for a file
+Utilities/SqliteAddon.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.s
+.PHONY : Utilities/SqliteAddon.s
+
+# target to build an object file
 Utilities/jsoncpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl3_transparent_window.dir/build.make CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o
 .PHONY : Utilities/jsoncpp.o
@@ -307,6 +322,9 @@ help:
 	@echo "... Utilities/SDL3_PLUS.o"
 	@echo "... Utilities/SDL3_PLUS.i"
 	@echo "... Utilities/SDL3_PLUS.s"
+	@echo "... Utilities/SqliteAddon.o"
+	@echo "... Utilities/SqliteAddon.i"
+	@echo "... Utilities/SqliteAddon.s"
 	@echo "... Utilities/jsoncpp.o"
 	@echo "... Utilities/jsoncpp.i"
 	@echo "... Utilities/jsoncpp.s"

@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build",
+  "command": "/usr/bin/g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/../Assets/\\\" -DHAS_SDL3_IMAGE=1 -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/json -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SqliteAddon.cpp",
+  "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/SqliteAddon.cpp",
+  "output": "CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.o"
+},
+{
+  "directory": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build",
   "command": "/usr/bin/g++ -DASSETS_ROOT_PATH=\\\"/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/../Assets/\\\" -DHAS_SDL3_IMAGE=1 -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/InitialConfiguration -I/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/json -g -std=gnu++17 -o CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o -c /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp",
   "file": "/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/Utilities/jsoncpp.cpp",
   "output": "CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o"

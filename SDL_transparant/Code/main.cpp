@@ -6,13 +6,20 @@
 //////////////////////////////////////////////////////////////////////////////
 
 #include "Utilities/SDL3_PLUS.hpp"
-#include "common.hpp"
+//#include "common.hpp"
 #include "Utilities/InitialConfiguration/Setup.hpp"
 //#include "Utilities/FileManipulation.hpp"
 #include "AudioPlayer/AudioPlayer.hpp"
-#include "AudioPlayer/AudioPlayer.hpp"
+#include <SDL3/SDL_stdinc.h>
 #include <filesystem>
 
+#if defined(_WIN32)
+    #include <process.h>
+    #define GETPID _getpid
+#else
+    #include <unistd.h>
+    #define GETPID getpid
+#endif
 
 std::string AssetPath = "../Assets/";
 
@@ -46,7 +53,7 @@ void MainDataLoad(MainData& _mainData)
     SDL_CreateWindowAndRenderer
     (
         "AudioPlayerX33",
-        1920, 1080,
+        500, 300,
         
         //SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP,
         //Change this if i want border or not, border is beter for debug
@@ -63,6 +70,10 @@ void MainDataLoad(MainData& _mainData)
         exit(EXIT_FAILURE);
     }
 
+    //Random init
+    printf("PID: %d\n", GETPID());
+    srand((unsigned int)(GETPID()));
+
     std::cerr << "MainData load ok\n";    
 }
 
@@ -78,7 +89,7 @@ int main(int argc, char* argv[])
 
     Sprite spr(mainData.renderer, std::string(AssetPath + "sample-bmp.bmp"));
 
-    spr.SetScale(50.f, 50.f);
+    //spr.SetScale(50.f, 50.f);
 
 
     bool running = true;
@@ -86,21 +97,27 @@ int main(int argc, char* argv[])
 
     while (running)
     {
+        //Poll event
         while (SDL_PollEvent(&event))
         {
-            running = (event.type == SDL_EVENT_QUIT) ? false : true;
+            switch (event.type)
+            {
+                case SDL_EVENT_QUIT:
+
+                    running = false;
+                    break;
+            }
         }
 
-        // Fond complètement transparent
-        //SDL_SetRenderDrawColor(mainData.renderer, 0, 0, 0, 0);   // alpha = 0
-        SDL_SetRenderDrawColor(mainData.renderer, 0, 0, 0, 0);   // alpha = 0
+        //Update
+        audioPlayer.Update(0.f);
+        
 
-
+        //Draw
+        SDL_SetRenderDrawColor(mainData.renderer, 0, 0, 0, 0);
         SDL_RenderClear(mainData.renderer);
 
-        //SDL_RenderTexture(mainData.renderer, texture, NULL, NULL);
         spr.Draw(mainData.renderer);
-
 
         SDL_RenderPresent(mainData.renderer);
 

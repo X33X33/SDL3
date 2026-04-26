@@ -174,6 +174,8 @@ CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o: \
  /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/deque \
  /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
  /usr/include/c++/15/stack /usr/include/c++/15/bits/stl_stack.h \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/SqliteAddon.hpp \
+ /usr/include/sqlite3.h \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../common.hpp \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/FileManipulation.hpp \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \

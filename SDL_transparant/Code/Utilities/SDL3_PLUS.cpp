@@ -67,7 +67,7 @@ SDL_FRect Sprite::GetRect() const
 {
     return m_rect; 
 }
-const SDL_FPoint &Sprite::GetPosition(void)
+SDL_FPoint Sprite::GetPosition(void)
 {
     return {m_rect.x, m_rect.y};
 }

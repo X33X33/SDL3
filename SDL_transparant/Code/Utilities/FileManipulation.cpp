@@ -1,6 +1,5 @@
-
 #include "FileManipulation.hpp"
-#include <filesystem>
+//#include <iostream>
 
 
 //Get name by full path (robust, cross-platform)
@@ -52,25 +51,30 @@ std::string ChangeType(std::string _path, std::string _newExtenssion)
 {
 	std::filesystem::path p(_path);
 	if (_newExtenssion.size() && _newExtenssion[0] == '.')
-	p.replace_extension(_newExtenssion);
+	{
+		p.replace_extension(_newExtenssion);
+	}
 	else
-	p.replace_extension("." + _newExtenssion);
+	{
+		p.replace_extension("." + _newExtenssion);
+	}
 	return p.string();
 }
 
 
-std::vector<std::string> GetFilesInFolder(const std::string& folderPath)
-{
-	std::vector<std::string> files;	
-	
+void GetFilesInFolder(const std::string& folderPath, std::vector<std::string>& _return, bool _recursif)
+{	
 	for (const auto& entry : std::filesystem::directory_iterator(folderPath))
 	{
 		if (entry.is_regular_file())
 		{
-			files.push_back(entry.path().string());
+			_return.push_back(entry.path().string());
+		}
+		else if (_recursif && entry.is_directory())
+		{
+			GetFilesInFolder( entry.path().string(), _return, _recursif);
 		}
 	}
-	return files;
 }
 
 bool FileExist(const std::string& _path)

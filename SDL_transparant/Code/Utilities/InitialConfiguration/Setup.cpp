@@ -1,4 +1,6 @@
 #include "Setup.hpp"
+#include <iostream>
+#include <fstream>
 
 void SetupWindow(void)
 {

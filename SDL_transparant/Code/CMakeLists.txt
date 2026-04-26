@@ -31,13 +31,23 @@ if(WIN32 OR CMAKE_SYSTEM_NAME STREQUAL "Windows")
   else()
     message(STATUS "SDL3_image non trouve: fallback BMP uniquement (SDL_LoadBMP)")
   endif()
+
+  # Find and link sqlite3 for Windows (assumes sqlite3 is available in the environment)
+  find_package(SQLite3 QUIET)
+  if(SQLite3_FOUND)
+    target_include_directories(sdl3_transparent_window PRIVATE ${SQLite3_INCLUDE_DIRS})
+    target_link_libraries(sdl3_transparent_window PRIVATE ${SQLite3_LIBRARIES})
+  else()
+    message(STATUS "SQLite3 not found: please ensure sqlite3 is available and set up for Windows builds.")
+  endif()
 else()
   find_package(PkgConfig REQUIRED)
   pkg_check_modules(SDL3 REQUIRED sdl3)
   pkg_check_modules(SDL3_IMAGE QUIET sdl3-image)
+  pkg_check_modules(SQLITE3 REQUIRED sqlite3)
 
-  target_include_directories(sdl3_transparent_window PRIVATE ${SDL3_INCLUDE_DIRS})
-  target_link_libraries(sdl3_transparent_window PRIVATE ${SDL3_LIBRARIES})
+  target_include_directories(sdl3_transparent_window PRIVATE ${SDL3_INCLUDE_DIRS} ${SQLITE3_INCLUDE_DIRS})
+  target_link_libraries(sdl3_transparent_window PRIVATE ${SDL3_LIBRARIES} ${SQLITE3_LIBRARIES})
 
   if(SDL3_IMAGE_FOUND)
     target_compile_definitions(sdl3_transparent_window PRIVATE HAS_SDL3_IMAGE=1)
@@ -59,10 +69,10 @@ target_compile_definitions(sdl3_transparent_window
 )
 
 # Copy Assets folder next to the built executable so runtime paths are stable
-add_custom_command(TARGET sdl3_transparent_window POST_BUILD
-  COMMAND ${CMAKE_COMMAND} -E copy_directory
-      ${CMAKE_SOURCE_DIR}/../Assets
-      $<TARGET_FILE_DIR:sdl3_transparent_window>/Assets)
+# add_custom_command(TARGET sdl3_transparent_window POST_BUILD
+#   COMMAND ${CMAKE_COMMAND} -E copy_directory
+#       ${CMAKE_SOURCE_DIR}/../Assets
+#       $<TARGET_FILE_DIR:sdl3_transparent_window>/Assets)
 
 # Install rule to copy the executable to the top-level build directory
 install(TARGETS sdl3_transparent_window

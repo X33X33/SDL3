@@ -6,12 +6,15 @@ sdl3_transparent_window: \
   CMakeFiles/sdl3_transparent_window.dir/Utilities/FileManipulation.o \
   CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o \
   CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o \
+  CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.o \
   CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o \
   CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o \
   CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libsqlite3.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3_image.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libsqlite3.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3_image.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -55,6 +58,8 @@ CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.o:
 
 CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.o:
 
+CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.o:
+
 CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.o:
 
 CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.o:
@@ -63,9 +68,13 @@ CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/MiniAudioAddon.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so:
 
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libsqlite3.so:
+
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3_image.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libsqlite3.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libSDL3_image.so:
 

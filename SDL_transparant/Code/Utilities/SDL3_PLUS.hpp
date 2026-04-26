@@ -2,7 +2,6 @@
 #define SDL3_PLUS_HPP
 
 #include <SDL3/SDL.h>
-#include <iostream>
 #include <string>
 
 class Sprite
@@ -15,7 +14,7 @@ public:
     #pragma region Getter and Setter
     SDL_Texture* GetTexture() const;
     SDL_FRect GetRect() const;
-    const SDL_FPoint& GetPosition(void);
+    SDL_FPoint GetPosition(void);
 
     float GetRotation() const;
     float GetScale() const;

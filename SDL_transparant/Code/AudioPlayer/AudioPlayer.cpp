@@ -1,20 +1,28 @@
 #include "AudioPlayer.hpp"
+
 #include "../common.hpp"
 #include "../Utilities/FileManipulation.hpp"
-#include "MiniAudioAddon.hpp"
 #include <fstream>
+#include <string>
 #include <vector>
 
 AudioPlayer::AudioPlayer()
 {
-    //Get config file
+    Setup();
+}
+AudioPlayer::~AudioPlayer()
+{
+}
+
+void AudioPlayer::Setup(void)
+{
+	//Get config file
     std::fstream file("../Assets/config.json", std::ios::in);
 	if (!file.is_open())
 	{
         std::cout << "CRITICAL ERROR : cannot open json file config file" << std::endl;
 		return;
 	}
- 
 
 	try
 	{
@@ -22,42 +30,112 @@ AudioPlayer::AudioPlayer()
 	}
 	catch (const std::exception& e)
 	{
-        std::cout << "CRITICAL ERROR : JSON parse failed for config " << e.what() << std::endl;
+        std::cerr << "CRITICAL ERROR : JSON parse failed for config " << e.what() << std::endl;
 		file.close();
 		return;
 	}
 	file.close();
     
     //Check if music folder is configured
-    const std::string& folderPath = config["music-folder-path"].asString();
+    std::string folderPath = config["music-folder-path"].asString();
+
+	
+	while (!FolderExist( folderPath))
+	{
+		//Reset var if user enter retry this fonction (invalid path)
+		folderPath = "";
+
+		std::cerr << "Your folder PATH of music isnt configured or invalid,\n please enter his PATH : ";
+		std::cin >> folderPath;
+	}
 
     std::cout << "folder path : " << folderPath << std::endl;
+	
+	//Save path if not the last saved
+	if (config["music-folder-path"] != folderPath)
+	{
+		config["music-folder-path"] = folderPath;
 
-    if (folderPath != "")
-    {
-		std::vector<std::string> filesInFolder = GetFilesInFolder(folderPath);
-
-
-		for (std::string& file : filesInFolder)
+		std::fstream file("../Assets/config.json", std::ios::out);
+		if (!file.is_open())
 		{
-			//std::cout << file << std::endl;
+			std::cerr << "CRITICAL ERROR : cannot open json file config file" << std::endl;
+			return;
+		}
 
-			if (GetFileTypeEnum(file) == FileType::MUSIC)
+		try
+		{
+			file << config;
+		}
+		catch (const std::exception& e)
+		{
+			std::cerr << "CRITICAL ERROR : JSON config save failed " << e.what() << std::endl;
+			file.close();
+			return;
+		}
+		file.close();
+	}
+	
+	musicsDB.SetDB("../Assets/music.db");
+
+	const char* sql = 
+	"CREATE TABLE IF NOT EXISTS tracks ("
+	"id INTEGER PRIMARY KEY,"
+	"title TEXT,"
+	"artist TEXT,"
+	"album TEXT,"
+	"path TEXT UNIQUE);";
+
+	char* errMsg = 0;
+	sqlite3_exec(musicsDB.db, sql, 0, 0, &errMsg);
+
+
+	sqlite3_stmt* stmt = nullptr;
+	const char* insert_sql = "INSERT OR IGNORE INTO tracks (path) VALUES (?);";
+
+	if (sqlite3_prepare_v2(this->musicsDB.db, insert_sql, -1, &stmt, nullptr) != SQLITE_OK)
+	{
+		std::cerr << "Erreur prepare insert: " << sqlite3_errmsg(this->musicsDB.db) << std::endl;
+	}
+	else
+	{
+		GetFilesInFolderFunction
+		(
+			folderPath,
+			[this, stmt](std::string path)
 			{
-				musicsPath.push_back(file);
-			}
-		}
-		for (std::string& musics : musicsPath)
-		{
-			std::cout << musics << std::endl;
-		}
-    }
+				if (GetFileTypeEnum(path) == FileType::MUSIC)
+				{
+					sqlite3_reset(stmt);
+					sqlite3_bind_text(stmt, 1, path.c_str(), -1, SQLITE_TRANSIENT);
 
-	//miniAudio.PlayMusic("/home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Assets/03. CHIHIRO.flac");
-	miniAudio.PlayMusic(musicsPath[1].c_str());
+					if (sqlite3_step(stmt) != SQLITE_DONE)
+					{
+						std::cerr << "Erreur insert: " << sqlite3_errmsg(this->musicsDB.db) << std::endl;
+					}
+				}
+			},
+			true
+		);
+		sqlite3_finalize(stmt);
+	}
 
+
+	m_nbOfMusics = musicsDB.GetCount("SELECT COUNT(*) FROM tracks;");
+	std::cout << "db size : " << m_nbOfMusics << std::endl;
 }
 
-AudioPlayer::~AudioPlayer()
+void AudioPlayer::Update(float _dt)
 {
+	if (!miniAudio.MusicIsPlaying())
+	{
+		//Play random music
+		std::vector<std::string> randomMusic;
+		int randomMusicNb = rand()% m_nbOfMusics -1;
+		std::cout << "random music : " << randomMusicNb;
+		musicsDB.GetColumn("SELECT path FROM tracks WHERE id = " + std::to_string(randomMusicNb)+ ";", randomMusic);
+
+		miniAudio.PlayMusic(randomMusic[0].c_str());
+		randomMusic.clear();
+	}
 }

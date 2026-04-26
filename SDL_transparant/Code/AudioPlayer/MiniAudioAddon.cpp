@@ -15,29 +15,50 @@ MiniAudio::MiniAudio()
         exit(EXIT_FAILURE);
     }
 }
+MiniAudio::~MiniAudio()
+{
+    ma_sound_uninit(sound);
+    ma_engine_uninit(engine);
+    
+    delete sound;
+    delete engine;
+}
+
 
 //Lecture du fichier audio
 int MiniAudio::PlayMusic(const char* _filePath)
 {
+    ma_sound_uninit(sound);
+    
     ma_result result = ma_sound_init_from_file(engine, _filePath, 0, NULL, NULL, sound);
     if (result != MA_SUCCESS)
     {
-        std::cerr << "Erreur lors du chargement du son, code miniaudio : " << result << std::endl;
+        std::cerr << "[MA] Erreur lors du chargement du son, code miniaudio : " << result << std::endl;
         return -1;
     }
 
-    ma_sound_start(sound);
-
+    if (ma_sound_start(sound) != MA_SUCCESS)
+    {
+        std::cerr << "[MA] Erreur lors du lancement du son, code miniaudio : " << result << std::endl;
+    }
+    else
+    {
+        std::cerr << "[MA] play : " << _filePath << std::endl;
+    }
 
     return 0;
 }
 
-void MiniAudio::Cleanup()
+bool MiniAudio::MusicIsPlaying(void)
 {
-    ma_sound_uninit(sound);
-    ma_engine_uninit(engine);
+    return ma_sound_is_playing(sound);
+}
 
-    delete sound;
-    delete engine;
-
+void MiniAudio::SetVolume(float _volume)
+{
+    ma_sound_set_volume(sound, _volume);
+}
+const float MiniAudio::GetVolume(void)
+{
+    return ma_sound_get_volume(sound);
 }

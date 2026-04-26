@@ -7,5 +7,4 @@
 #include <map>
 
 
-
 #endif //!COMMON_HPP
