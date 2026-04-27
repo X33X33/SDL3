@@ -149,11 +149,6 @@ Code/CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.cpp.obj: \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/ostream.tcc \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/istream \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/istream.tcc \
- /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/miniaudio.h \
- /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/stdarg.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdarg.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h \
- /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/jsoncpp.cpp \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/json/json.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/algorithm \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_algo.h \
@@ -203,41 +198,33 @@ Code/CMakeFiles/sdl3_transparent_window.dir/AudioPlayer/AudioPlayer.cpp.obj: \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/deque.tcc \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/stack \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_stack.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cassert \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/assert.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cmath \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/math.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/specfun.h \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/SqliteAddon.hpp \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/WinInclude/sqlite-amalgamation-3530000/sqlite3.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/stdarg.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdarg.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../common.hpp \
+ /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/FileManipulation.hpp \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/filesystem \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/fs_fwd.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/chrono.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ratio \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/limits \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/gamma.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/special_function_util.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/bessel_function.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/beta_function.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/ell_integral.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/exp_integral.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/hypergeometric.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/legendre_function.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/modified_bessel_func.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/poly_hermite.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/poly_laguerre.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tr1/riemann_zeta.tcc \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/set \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_set.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_multiset.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/utility \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_relops.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/iomanip \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ctime \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/parse_numbers.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/fs_path.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/locale \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/locale_facets_nonio.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ctime \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/time_members.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/codecvt.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/locale_facets_nonio.tcc \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/locale_conv.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/iomanip \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/quoted_string.h \
- /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../Utilities/json/json.h \
- /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/Code/AudioPlayer/../common.hpp \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/codecvt \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/fs_dir.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/fs_ops.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/fstream \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/c++io.h \

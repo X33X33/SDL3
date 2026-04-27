@@ -295,6 +295,30 @@ Utilities/SDL3_PLUS.cpp.s:
 	cd /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win && $(MAKE) $(MAKESILENT) -f Code/CMakeFiles/sdl3_transparent_window.dir/build.make Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.s
 .PHONY : Utilities/SDL3_PLUS.cpp.s
 
+Utilities/SqliteAddon.obj: Utilities/SqliteAddon.cpp.obj
+.PHONY : Utilities/SqliteAddon.obj
+
+# target to build an object file
+Utilities/SqliteAddon.cpp.obj:
+	cd /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win && $(MAKE) $(MAKESILENT) -f Code/CMakeFiles/sdl3_transparent_window.dir/build.make Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.cpp.obj
+.PHONY : Utilities/SqliteAddon.cpp.obj
+
+Utilities/SqliteAddon.i: Utilities/SqliteAddon.cpp.i
+.PHONY : Utilities/SqliteAddon.i
+
+# target to preprocess a source file
+Utilities/SqliteAddon.cpp.i:
+	cd /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win && $(MAKE) $(MAKESILENT) -f Code/CMakeFiles/sdl3_transparent_window.dir/build.make Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.cpp.i
+.PHONY : Utilities/SqliteAddon.cpp.i
+
+Utilities/SqliteAddon.s: Utilities/SqliteAddon.cpp.s
+.PHONY : Utilities/SqliteAddon.s
+
+# target to generate assembly for a file
+Utilities/SqliteAddon.cpp.s:
+	cd /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/build-win && $(MAKE) $(MAKESILENT) -f Code/CMakeFiles/sdl3_transparent_window.dir/build.make Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.cpp.s
+.PHONY : Utilities/SqliteAddon.cpp.s
+
 Utilities/jsoncpp.obj: Utilities/jsoncpp.cpp.obj
 .PHONY : Utilities/jsoncpp.obj
 
@@ -371,6 +395,9 @@ help:
 	@echo "... Utilities/SDL3_PLUS.obj"
 	@echo "... Utilities/SDL3_PLUS.i"
 	@echo "... Utilities/SDL3_PLUS.s"
+	@echo "... Utilities/SqliteAddon.obj"
+	@echo "... Utilities/SqliteAddon.i"
+	@echo "... Utilities/SqliteAddon.s"
 	@echo "... Utilities/jsoncpp.obj"
 	@echo "... Utilities/jsoncpp.i"
 	@echo "... Utilities/jsoncpp.s"

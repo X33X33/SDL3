@@ -88,68 +88,37 @@ Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj: \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4/x86_64-w64-mingw32/include/SDL3/SDL_tray.h \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4/x86_64-w64-mingw32/include/SDL3/SDL_version.h \
  /home/benoit/Documents/Programation/Projets/Git/SDL3/SDL_transparant/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4/x86_64-w64-mingw32/include/SDL3/SDL_oldnames.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/iostream \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/string \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/requires_hosted.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/pstl/pstl_config.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ostream \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/ostream.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ios \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/iosfwd \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stringfwd.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/memoryfwd.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/char_traits.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/postypes.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cwchar \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/exception \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/exception.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/version.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/exception_ptr.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/exception_defines.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/cxxabi_init_exception.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/typeinfo \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/hash_bytes.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/new \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/move.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/type_traits \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/nested_exception.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/char_traits.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/version.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/allocator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/new_allocator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/new \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/exception.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/functexcept.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/exception_defines.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/move.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/cpp_type_traits.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/localefwd.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/clocale \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/locale.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdio.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/iosfwd \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cctype \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/ctype.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/ios_base.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ext/atomicity.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/errno.h \
- /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/limits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/syslimits.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/limits.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_signal.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/time.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys/timeb.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/sys/timeb_s.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/_timeval.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_time.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_compat.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/sched.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_unistd.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/locale_classes.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/string \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/allocator.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/new_allocator.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/functexcept.h \
- /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/cpp_type_traits.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/ostream_insert.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/cxxabi_forced.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_iterator_base_funcs.h \
@@ -179,14 +148,19 @@ Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj: \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/stl_construct.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/string_view \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/functional_hash.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/hash_bytes.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/string_view.tcc \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ext/string_conversions.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cstdlib \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/syslimits.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/limits.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/stdlib_s.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/stdlib.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/malloc.h \
  /usr/lib/gcc/x86_64-w64-mingw32/15.2.1/include/mm_malloc.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/errno.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/std_abs.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cstdio \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/cerrno \
@@ -197,6 +171,32 @@ Code/CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj: \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/uses_allocator.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/uses_allocator_args.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/tuple \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/iostream \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ostream \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/ostream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ios \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/exception \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/exception_ptr.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/cxxabi_init_exception.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/typeinfo \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/nested_exception.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/ios_base.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/ext/atomicity.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_signal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/time.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys/timeb.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/sys/timeb_s.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_timeval.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_time.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_compat.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sched.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_unistd.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/locale_classes.h \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/bits/locale_classes.tcc \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/system_error \
  /usr/x86_64-w64-mingw32/sys-root/mingw/include/c++/x86_64-w64-mingw32/bits/error_constants.h \

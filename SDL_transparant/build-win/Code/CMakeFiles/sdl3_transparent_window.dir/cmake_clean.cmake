@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sdl3_transparent_window.dir/Utilities/InitialConfiguration/Setup.cpp.obj.d"
   "CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj"
   "CMakeFiles/sdl3_transparent_window.dir/Utilities/SDL3_PLUS.cpp.obj.d"
+  "CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.cpp.obj"
+  "CMakeFiles/sdl3_transparent_window.dir/Utilities/SqliteAddon.cpp.obj.d"
   "CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.cpp.obj"
   "CMakeFiles/sdl3_transparent_window.dir/Utilities/jsoncpp.cpp.obj.d"
   "CMakeFiles/sdl3_transparent_window.dir/main.cpp.obj"

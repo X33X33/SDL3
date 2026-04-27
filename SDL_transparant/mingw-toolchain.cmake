@@ -21,3 +21,11 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE BOTH)
+
+# Ajout du chemin WinInclude/ pour SQLite3
+include_directories("${CMAKE_CURRENT_LIST_DIR}/WinInclude")
+
+# SQLite3 include and library for Windows cross-compilation
+set(SQLITE3_WIN_ROOT "${CMAKE_CURRENT_LIST_DIR}/WinInclude/sqlite-amalgamation-3530000")
+include_directories("${SQLITE3_WIN_ROOT}")
+link_directories("${SQLITE3_WIN_ROOT}")

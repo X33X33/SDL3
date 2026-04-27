@@ -1,6 +1,7 @@
 file(GLOB MAIN_SRC "main.cpp")
 file(GLOB_RECURSE UTILITIES_SRC "Utilities/*.cpp")
 file(GLOB_RECURSE AUDIO_SRC "AudioPlayer/*.cpp")
+
 add_executable(sdl3_transparent_window ${MAIN_SRC} ${UTILITIES_SRC} ${AUDIO_SRC})
 
 # Collect all subdirectories under Utilities (not files)
@@ -16,6 +17,10 @@ target_include_directories(sdl3_transparent_window PRIVATE ${CMAKE_CURRENT_SOURC
 
 # Dependencies Linux/Windows
 if(WIN32 OR CMAKE_SYSTEM_NAME STREQUAL "Windows")
+
+  target_include_directories(sdl3_transparent_window PRIVATE ${CMAKE_SOURCE_DIR}/WinInclude)
+
+
   set(SDL3_WIN_PACKAGE_ROOT "${CMAKE_SOURCE_DIR}/WinInclude/SDL3-devel-3.4.4-mingw/SDL3-3.4.4")
   if(EXISTS "${SDL3_WIN_PACKAGE_ROOT}/cmake/SDL3Config.cmake")
     list(PREPEND CMAKE_PREFIX_PATH "${SDL3_WIN_PACKAGE_ROOT}")
@@ -23,6 +28,7 @@ if(WIN32 OR CMAKE_SYSTEM_NAME STREQUAL "Windows")
 
   find_package(SDL3 CONFIG REQUIRED)
   target_link_libraries(sdl3_transparent_window PRIVATE SDL3::SDL3)
+  target_link_libraries(sdl3_transparent_window PRIVATE sqlite3)
 
   find_package(SDL3_image CONFIG QUIET)
   if(TARGET SDL3_image::SDL3_image)
@@ -38,7 +44,8 @@ if(WIN32 OR CMAKE_SYSTEM_NAME STREQUAL "Windows")
     target_include_directories(sdl3_transparent_window PRIVATE ${SQLite3_INCLUDE_DIRS})
     target_link_libraries(sdl3_transparent_window PRIVATE ${SQLite3_LIBRARIES})
   else()
-    message(STATUS "SQLite3 not found: please ensure sqlite3 is available and set up for Windows builds.")
+    target_include_directories(sdl3_transparent_window PRIVATE ${CMAKE_SOURCE_DIR}/WinInclude)
+    target_link_libraries(sdl3_transparent_window PRIVATE sqlite3)
   endif()
 else()
   find_package(PkgConfig REQUIRED)
